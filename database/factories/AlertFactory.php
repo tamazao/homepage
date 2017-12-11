@@ -7,6 +7,7 @@ $factory->define(App\Alert::class, function (Faker $faker) {
         //
         'summary' => $faker->sentence($nbwords = 12, $variableNbWords = true),
         'details' => $faker->paragraph($nbSentences = 4, $variableNbSentences = true),
+        'priority' => 'warning',
         'effectiveDate' => $faker->dateTime($max = 'now'),
         'expirationDate' => $faker->dateTime($min = 'now')
     ];
