@@ -26,4 +26,4 @@ Route::resource('links', 'LinkController');
 
 Route::resource('alerts', 'AlertController');
 
-Route::get('thumbnail/retreve/{id}', 'ThumbnailController@retreve');
+Route::get('/admin/links/thumbnail/retreve/{id}', 'ThumbnailController@retreve');
